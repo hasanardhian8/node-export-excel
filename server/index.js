@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require("dotenv");
 dotenv.config();
 
-const db = require("../models");
+const db = require("./models");
 
 //route
 const barangRouter = require("./routers/barangRouter");

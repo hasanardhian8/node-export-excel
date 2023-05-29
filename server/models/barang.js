@@ -1,28 +1,24 @@
 module.exports = (sequelize, Sequelize) => {
-  const Client = sequelize.define(
-    "client",
+  const Barang = sequelize.define(
+    "barang",
     {
-      id_client: {
+      id_barang: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
       },
-      nama: {
+      barang: {
         type: Sequelize.STRING(255),
         allowNull: true,
       },
-      kategori: {
-        type: Sequelize.STRING(255),
-        allowNull: true,
-      },
-      daftar: {
-        type: Sequelize.DATEONLY,
+      harga: {
+        type: Sequelize.INTEGER,
         allowNull: true,
       },
     },
     {
-      timestamps: false,
+      timestamps: true,
     }
   );
-  return Client;
+  return Barang;
 };
