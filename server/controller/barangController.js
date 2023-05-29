@@ -1,4 +1,4 @@
-const db = require("../../models");
+const db = require("../models");
 const Barang = db.barangs;
 
 exports.find = async (req, res) => {
