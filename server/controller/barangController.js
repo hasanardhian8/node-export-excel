@@ -1,4 +1,4 @@
-const Barang = require("../models").Barang;
+const Barang = require("../models").barangs;
 
 exports.find = async (req, res) => {
   try {
