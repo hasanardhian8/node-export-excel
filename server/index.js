@@ -10,6 +10,7 @@ const db = require("./models");
 
 //route
 const barangRouter = require("./routers/barang.router");
+const downloadRouter = require("./routers/download.router");
 
 //middleware
 app.use(express.json());
@@ -20,6 +21,7 @@ app.use(cors());
 
 // ROUTES MIDDLEWARE
 app.use("/api", barangRouter);
+app.use("/download", downloadRouter);
 
 db.sequelize
   .sync()
