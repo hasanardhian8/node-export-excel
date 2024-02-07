@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/index.js",
+    "dev": "node ./server/index.js",
     "reverse:db": "sequelize-auto -o ./models -d shop -h localhost -u postgres -p 5432 -x admin -e postgres -1 esm",
     "migrate": "npx sequelize-cli db:migrate",
     "down": "npx sequelize-cli db:migrate:undo"

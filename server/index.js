@@ -9,7 +9,7 @@ dotenv.config();
 const db = require("./models");
 
 //route
-const barangRouter = require("./routers/barangRouter");
+const barangRouter = require("./routers/barang.router");
 
 //middleware
 app.use(express.json());
